@@ -1,0 +1,7884 @@
+[
+  {
+    "__type__": "cc.SceneAsset",
+    "_name": "",
+    "_objFlags": 0,
+    "_native": "",
+    "scene": {
+      "__id__": 1
+    }
+  },
+  {
+    "__type__": "cc.Scene",
+    "_name": "Main",
+    "_objFlags": 0,
+    "_parent": null,
+    "_children": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 4
+      }
+    ],
+    "_active": true,
+    "_components": [],
+    "_prefab": null,
+    "autoReleaseAssets": false,
+    "_globals": {
+      "__id__": 365
+    },
+    "_id": "2147a60b-8ea3-4a4a-90ef-ad3f3b2e7243"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "GameManager",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 3
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "c0jDHa/N5DH6Qm3XneJhQg"
+  },
+  {
+    "__type__": "f5af9bZy5ZAPpSB41YPSerf",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_id": "d6P70b4UxG7oi27rWv3s9v"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Canvas",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [
+      {
+        "__id__": 5
+      },
+      {
+        "__id__": 7
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 362
+      },
+      {
+        "__id__": 363
+      },
+      {
+        "__id__": 364
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 480,
+      "y": 320.00000000000006,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "beI88Z2HpFELqR4T5EMHpg"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Camera",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 4
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 6
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 1000
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "ebFwiq8gBFaYpqYbdoDODe"
+  },
+  {
+    "__type__": "cc.Camera",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 5
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_projection": 0,
+    "_priority": 1073741824,
+    "_fov": 45,
+    "_fovAxis": 0,
+    "_orthoHeight": 320,
+    "_near": 0,
+    "_far": 2000,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 161,
+      "g": 161,
+      "b": 161,
+      "a": 255
+    },
+    "_depth": 1,
+    "_stencil": 0,
+    "_clearFlags": 7,
+    "_rect": {
+      "__type__": "cc.Rect",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    "_aperture": 19,
+    "_shutter": 7,
+    "_iso": 0,
+    "_screenScale": 1,
+    "_visibility": 41943040,
+    "_targetTexture": null,
+    "_id": "63WIch3o5BEYRlXzTT0oWc"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Ui",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 4
+    },
+    "_children": [
+      {
+        "__id__": 8
+      },
+      {
+        "__id__": 62
+      },
+      {
+        "__id__": 107
+      },
+      {
+        "__id__": 155
+      },
+      {
+        "__id__": 216
+      },
+      {
+        "__id__": 282
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 324
+      },
+      {
+        "__id__": 325
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "a654tpaTpJrrF/zmc8pSMt"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Progressbar",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 7
+    },
+    "_children": [
+      {
+        "__id__": 9
+      },
+      {
+        "__id__": 12
+      },
+      {
+        "__id__": 15
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 24
+      },
+      {
+        "__id__": 25
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 3124.385,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "efpmcwrehCzpVMZOqB5YVm"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Back",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 8
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 10
+      },
+      {
+        "__id__": 11
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "baHQgx8zxH+Y85nR4ikS51"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 9
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1368,
+      "height": 267
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 1
+    },
+    "_id": "a780c2R5RNPaz8Do9gWIFN"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 9
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "b5fdba36-9636-4dd7-807c-8b22c4203530@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "59Cen7L49EIJvIRMISPuC2"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Text",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 8
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 13
+      },
+      {
+        "__id__": 14
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": -58.951,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "6ccSompUVHuph0oc/SAl7H"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 12
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 283.56,
+      "height": 75.6
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "e2pu9euVJMJr/Nf0l00Dd0"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 12
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_string": "Прогресс",
+    "_horizontalAlign": 1,
+    "_verticalAlign": 1,
+    "_actualFontSize": 60,
+    "_fontSize": 60,
+    "_fontFamily": "Arial",
+    "_lineHeight": 60,
+    "_overflow": 0,
+    "_enableWrapText": true,
+    "_font": {
+      "__uuid__": "3c54767c-5ea3-493e-89b2-927e7504ba56",
+      "__expectedType__": "cc.TTFFont"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_isItalic": false,
+    "_isBold": false,
+    "_isUnderline": false,
+    "_underlineHeight": 2,
+    "_cacheMode": 0,
+    "_id": "60/nIjCyROtJE0P56jZNu2"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Outline",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 8
+    },
+    "_children": [
+      {
+        "__id__": 16
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 22
+      },
+      {
+        "__id__": 23
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": -163.871,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "11pwwn59dC9qRxFCXzWzZN"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Mask",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 15
+    },
+    "_children": [
+      {
+        "__id__": 17
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 20
+      },
+      {
+        "__id__": 21
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "7ahFeYQ61MAIwc7WrRSLCe"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Progress",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 16
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 18
+      },
+      {
+        "__id__": 19
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": -248.339,
+      "y": 2.279,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "1dalJq3IhNsJLLpyIIA25K"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 17
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 735,
+      "height": 86
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "eexasmLHJJdaPrvYznsPtw"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 17
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "7fdc3507-5180-4ac3-96dc-687980c6107a@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "b6TiXhOfJGiYgXmD3MHCja"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 16
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1235,
+      "height": 103
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "7bnnGaQSVFfpaLIzkLUFg9"
+  },
+  {
+    "__type__": "cc.Mask",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 16
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_type": 3,
+    "_inverted": false,
+    "_segments": 64,
+    "_spriteFrame": {
+      "__uuid__": "fa691767-0f1f-4e8b-bc3c-5a84cef09266@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_alphaThreshold": 0.1,
+    "_id": "e0//vyb4ZGP5GnWig9fwoa"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 15
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1259,
+      "height": 103
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "85LXL5IedK0qWlgGMZC/La"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 15
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "fa691767-0f1f-4e8b-bc3c-5a84cef09266@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "53dmwBS5ROyo0D8VqtkMbt"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 8
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1368,
+      "height": 267
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 1
+    },
+    "_id": "fbpJpCDh5KwJ8QGvyqFQF8"
+  },
+  {
+    "__type__": "5d8d59fcxRAqr+FFHp4TSn3",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 8
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_transformReference": null,
+    "_isSameTransform": true,
+    "_isDependingOnSideRatio": false,
+    "_limitSideRatio": 1.35,
+    "commonTransform": {
+      "__id__": 26
+    },
+    "commonTransformBelowSideRatio": {
+      "__id__": 32
+    },
+    "landscapeTransform": {
+      "__id__": 38
+    },
+    "landscapeTransformBelowSideRatio": {
+      "__id__": 44
+    },
+    "portraitTransform": {
+      "__id__": 50
+    },
+    "portraitTransformBelowSideRatio": {
+      "__id__": 56
+    },
+    "_id": "18JJrgP4xKEZffZluExS+U"
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 27
+    },
+    "_scaleComponent": {
+      "__id__": 28
+    },
+    "_rotationComponent": {
+      "__id__": 29
+    },
+    "_anchorComponent": {
+      "__id__": 30
+    },
+    "_sizeComponent": {
+      "__id__": 31
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 1
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.55,
+      "y": 0.15
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 33
+    },
+    "_scaleComponent": {
+      "__id__": 34
+    },
+    "_rotationComponent": {
+      "__id__": 35
+    },
+    "_anchorComponent": {
+      "__id__": 36
+    },
+    "_sizeComponent": {
+      "__id__": 37
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 39
+    },
+    "_scaleComponent": {
+      "__id__": 40
+    },
+    "_rotationComponent": {
+      "__id__": 41
+    },
+    "_anchorComponent": {
+      "__id__": 42
+    },
+    "_sizeComponent": {
+      "__id__": 43
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 45
+    },
+    "_scaleComponent": {
+      "__id__": 46
+    },
+    "_rotationComponent": {
+      "__id__": 47
+    },
+    "_anchorComponent": {
+      "__id__": 48
+    },
+    "_sizeComponent": {
+      "__id__": 49
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 51
+    },
+    "_scaleComponent": {
+      "__id__": 52
+    },
+    "_rotationComponent": {
+      "__id__": 53
+    },
+    "_anchorComponent": {
+      "__id__": 54
+    },
+    "_sizeComponent": {
+      "__id__": 55
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 57
+    },
+    "_scaleComponent": {
+      "__id__": 58
+    },
+    "_rotationComponent": {
+      "__id__": 59
+    },
+    "_anchorComponent": {
+      "__id__": 60
+    },
+    "_sizeComponent": {
+      "__id__": 61
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "PauseButton",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 7
+    },
+    "_children": [
+      {
+        "__id__": 63
+      },
+      {
+        "__id__": 66
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 69
+      },
+      {
+        "__id__": 70
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 1099.159,
+      "y": 2984.872,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "3elqMC+v5BkZxN8KfVFmDm"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Back",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 62
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 64
+      },
+      {
+        "__id__": 65
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": -20,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "8dNGkt4yFEYIS6FJTM7lJ9"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 63
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 291,
+      "height": 291
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "a6rbYY5K5BpbPwFChMuRRQ"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 63
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "b5298d82-c336-4996-90aa-0c2b7e2da8dc@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "ccN1RO64NAEZ2Tk6HK9266"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Input",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 62
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 67
+      },
+      {
+        "__id__": 68
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "32mn1wlPpFMKRoZj1XCFuj"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 66
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 250,
+      "height": 250
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "aaej/abjpDmZt11LvxfFBa"
+  },
+  {
+    "__type__": "bfd25+KDbhOjY67Qa0BTnuK",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 66
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "inputSource": 1,
+    "_id": "27OfHOaJRAhYPgLYni634L"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 62
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 250,
+      "height": 250
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "4akJujrTxCoaY5RxLMo0ky"
+  },
+  {
+    "__type__": "5d8d59fcxRAqr+FFHp4TSn3",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 62
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_transformReference": null,
+    "_isSameTransform": false,
+    "_isDependingOnSideRatio": false,
+    "_limitSideRatio": 1.35,
+    "commonTransform": {
+      "__id__": 71
+    },
+    "commonTransformBelowSideRatio": {
+      "__id__": 77
+    },
+    "landscapeTransform": {
+      "__id__": 83
+    },
+    "landscapeTransformBelowSideRatio": {
+      "__id__": 89
+    },
+    "portraitTransform": {
+      "__id__": 95
+    },
+    "portraitTransformBelowSideRatio": {
+      "__id__": 101
+    },
+    "_id": "3aUIDTsWNB74XPVKAfZQB3"
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 72
+    },
+    "_scaleComponent": {
+      "__id__": 73
+    },
+    "_rotationComponent": {
+      "__id__": 74
+    },
+    "_anchorComponent": {
+      "__id__": 75
+    },
+    "_sizeComponent": {
+      "__id__": 76
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.925,
+      "y": 0.925
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.125,
+      "y": 0.125
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 78
+    },
+    "_scaleComponent": {
+      "__id__": 79
+    },
+    "_rotationComponent": {
+      "__id__": 80
+    },
+    "_anchorComponent": {
+      "__id__": 81
+    },
+    "_sizeComponent": {
+      "__id__": 82
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 84
+    },
+    "_scaleComponent": {
+      "__id__": 85
+    },
+    "_rotationComponent": {
+      "__id__": 86
+    },
+    "_anchorComponent": {
+      "__id__": 87
+    },
+    "_sizeComponent": {
+      "__id__": 88
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.925,
+      "y": 0.925
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.125,
+      "y": 0.125
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 90
+    },
+    "_scaleComponent": {
+      "__id__": 91
+    },
+    "_rotationComponent": {
+      "__id__": 92
+    },
+    "_anchorComponent": {
+      "__id__": 93
+    },
+    "_sizeComponent": {
+      "__id__": 94
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 96
+    },
+    "_scaleComponent": {
+      "__id__": 97
+    },
+    "_rotationComponent": {
+      "__id__": 98
+    },
+    "_anchorComponent": {
+      "__id__": 99
+    },
+    "_sizeComponent": {
+      "__id__": 100
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.89,
+      "y": 0.96
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.125,
+      "y": 0.07
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 102
+    },
+    "_scaleComponent": {
+      "__id__": 103
+    },
+    "_rotationComponent": {
+      "__id__": 104
+    },
+    "_anchorComponent": {
+      "__id__": 105
+    },
+    "_sizeComponent": {
+      "__id__": 106
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "LevelPanel",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 7
+    },
+    "_children": [
+      {
+        "__id__": 108
+      },
+      {
+        "__id__": 111
+      },
+      {
+        "__id__": 114
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 117
+      },
+      {
+        "__id__": 118
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": -1012.841,
+      "y": 2984.872,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "fdeerXzvVFe668J3C+bkRA"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Back",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 107
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 109
+      },
+      {
+        "__id__": 110
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "26xRxnlX5H/aOghH5fbIB7"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 108
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 367,
+      "height": 157
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "b62QQLGNxAhYqrgMfMfaZb"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 108
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "74de5b6b-494f-468d-a363-d8bb78551438@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "aeh03hUlVBxo77dPzZyKxy"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Circle",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 107
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 112
+      },
+      {
+        "__id__": 113
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": -113.163,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "45qRGSE8hB+Zahzsl/WfVw"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 111
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 157,
+      "height": 157
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "4fmlvoW21Lx6o1znejXK8g"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 111
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "95f29bca-a249-41bc-885c-2577b5ff69f5@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "45nJ0Pnl9AD6FUpMOsEP1U"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "LevelNumber",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 107
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 115
+      },
+      {
+        "__id__": 116
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 44.618,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "c34v4T64dDvoqGbb0030WD"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 114
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 150,
+      "height": 100
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "e8sQ2AMiVLZ52hKTLjD1uO"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 114
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_string": "1",
+    "_horizontalAlign": 1,
+    "_verticalAlign": 1,
+    "_actualFontSize": 100,
+    "_fontSize": 100,
+    "_fontFamily": "Arial",
+    "_lineHeight": 100,
+    "_overflow": 2,
+    "_enableWrapText": true,
+    "_font": {
+      "__uuid__": "3c54767c-5ea3-493e-89b2-927e7504ba56",
+      "__expectedType__": "cc.TTFFont"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_isItalic": false,
+    "_isBold": false,
+    "_isUnderline": false,
+    "_underlineHeight": 2,
+    "_cacheMode": 0,
+    "_id": "0eDoudbUpMD5g2PraxU0fw"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 107
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 367,
+      "height": 157
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "28ankFpslEUb3akx7HFFc3"
+  },
+  {
+    "__type__": "5d8d59fcxRAqr+FFHp4TSn3",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 107
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_transformReference": null,
+    "_isSameTransform": false,
+    "_isDependingOnSideRatio": false,
+    "_limitSideRatio": 1.35,
+    "commonTransform": {
+      "__id__": 119
+    },
+    "commonTransformBelowSideRatio": {
+      "__id__": 125
+    },
+    "landscapeTransform": {
+      "__id__": 131
+    },
+    "landscapeTransformBelowSideRatio": {
+      "__id__": 137
+    },
+    "portraitTransform": {
+      "__id__": 143
+    },
+    "portraitTransformBelowSideRatio": {
+      "__id__": 149
+    },
+    "_id": "b2jGMss01E2JhMJG/Ez6dn"
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 120
+    },
+    "_scaleComponent": {
+      "__id__": 121
+    },
+    "_rotationComponent": {
+      "__id__": 122
+    },
+    "_anchorComponent": {
+      "__id__": 123
+    },
+    "_sizeComponent": {
+      "__id__": 124
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.14,
+      "y": 0.925
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.125,
+      "y": 0.125
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 126
+    },
+    "_scaleComponent": {
+      "__id__": 127
+    },
+    "_rotationComponent": {
+      "__id__": 128
+    },
+    "_anchorComponent": {
+      "__id__": 129
+    },
+    "_sizeComponent": {
+      "__id__": 130
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 132
+    },
+    "_scaleComponent": {
+      "__id__": 133
+    },
+    "_rotationComponent": {
+      "__id__": 134
+    },
+    "_anchorComponent": {
+      "__id__": 135
+    },
+    "_sizeComponent": {
+      "__id__": 136
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.14,
+      "y": 0.925
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.125,
+      "y": 0.125
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 138
+    },
+    "_scaleComponent": {
+      "__id__": 139
+    },
+    "_rotationComponent": {
+      "__id__": 140
+    },
+    "_anchorComponent": {
+      "__id__": 141
+    },
+    "_sizeComponent": {
+      "__id__": 142
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 144
+    },
+    "_scaleComponent": {
+      "__id__": 145
+    },
+    "_rotationComponent": {
+      "__id__": 146
+    },
+    "_anchorComponent": {
+      "__id__": 147
+    },
+    "_sizeComponent": {
+      "__id__": 148
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.118,
+      "y": 0.96
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.15,
+      "y": 0.075
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 150
+    },
+    "_scaleComponent": {
+      "__id__": 151
+    },
+    "_rotationComponent": {
+      "__id__": 152
+    },
+    "_anchorComponent": {
+      "__id__": 153
+    },
+    "_sizeComponent": {
+      "__id__": 154
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Scoreboard",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 7
+    },
+    "_children": [
+      {
+        "__id__": 156
+      },
+      {
+        "__id__": 159
+      },
+      {
+        "__id__": 167
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 178
+      },
+      {
+        "__id__": 179
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 922.913,
+      "y": 1810.329,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "80VDG+KPBAFoCbabUiAA95"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Back",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 155
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 157
+      },
+      {
+        "__id__": 158
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "daLuof+TFH34G9LuPSwH7l"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 156
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1118,
+      "height": 1055
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "99DBdgZdRHj7YovSvGYe66"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 156
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "0bb460e3-ca6a-48de-9b7a-831d4d360888@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "39dOClFaJDOL2x/5ydlDiu"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Moves",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 155
+    },
+    "_children": [
+      {
+        "__id__": 160
+      },
+      {
+        "__id__": 163
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 166
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 181.068,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "d9+3w/6rtC0J/9oPn7/W+x"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Back",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 159
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 161
+      },
+      {
+        "__id__": 162
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "e3wHWV9ypC16MzlTswnEZ9"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 160
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 625,
+      "height": 625
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "5esiRHrVBInrBRdGzGe67x"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 160
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "666f8306-6ef4-4bea-a0a0-8fde2d49f671@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "f5LaAhc3xLqYDHQx9C2Gw/"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Count",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 159
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 164
+      },
+      {
+        "__id__": 165
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "cf39wjZ/FG75Y1ae/p1nxY"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 163
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 400,
+      "height": 400
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "38+2UoWR5N7YQOY7j2ZpsS"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 163
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_string": "30",
+    "_horizontalAlign": 1,
+    "_verticalAlign": 1,
+    "_actualFontSize": 201,
+    "_fontSize": 200,
+    "_fontFamily": "Arial",
+    "_lineHeight": 200,
+    "_overflow": 2,
+    "_enableWrapText": true,
+    "_font": {
+      "__uuid__": "3c54767c-5ea3-493e-89b2-927e7504ba56",
+      "__expectedType__": "cc.TTFFont"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_isItalic": false,
+    "_isBold": false,
+    "_isUnderline": false,
+    "_underlineHeight": 2,
+    "_cacheMode": 0,
+    "_id": "f23G11bpNAfpV2KFnwdllS"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 159
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 500,
+      "height": 500
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "06eFLswJZK8rVF+egfZfMZ"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "ScorePanel",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 155
+    },
+    "_children": [
+      {
+        "__id__": 168
+      },
+      {
+        "__id__": 171
+      },
+      {
+        "__id__": 174
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 177
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": -272.051,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "953bXYnLFOy4FapvVwB8kJ"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Back",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 167
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 169
+      },
+      {
+        "__id__": 170
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "f8PtESU+tCML85zXpFa3ox"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 168
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 822,
+      "height": 333
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "3flWXBIPJC/Z2CjZ2lqZD+"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 168
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "9406cc03-5098-446b-b229-c9b66c81799f@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "5b9Bfp3tNOLaA36RlCW7ZH"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Text",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 167
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 172
+      },
+      {
+        "__id__": 173
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 60,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "786GHxnvNLLoHDv05Z9NX5"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 171
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 325.2,
+      "height": 126
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "d8wVl4l/NOk60Z92Huj6hY"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 171
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_string": "Очки:",
+    "_horizontalAlign": 1,
+    "_verticalAlign": 1,
+    "_actualFontSize": 100,
+    "_fontSize": 100,
+    "_fontFamily": "Arial",
+    "_lineHeight": 100,
+    "_overflow": 0,
+    "_enableWrapText": true,
+    "_font": {
+      "__uuid__": "3c54767c-5ea3-493e-89b2-927e7504ba56",
+      "__expectedType__": "cc.TTFFont"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_isItalic": false,
+    "_isBold": false,
+    "_isUnderline": false,
+    "_underlineHeight": 2,
+    "_cacheMode": 0,
+    "_id": "78HGsNimhJf5avYdmIIQwV"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "CurrentScore",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 167
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 175
+      },
+      {
+        "__id__": 176
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": -60,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "dfFOTG/jVOlIdWxKRgbJxf"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 174
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 716,
+      "height": 126
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "4aPT3qLiVPqJU7T3tfjK6P"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 174
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_string": "0",
+    "_horizontalAlign": 1,
+    "_verticalAlign": 1,
+    "_actualFontSize": 101,
+    "_fontSize": 100,
+    "_fontFamily": "Arial",
+    "_lineHeight": 100,
+    "_overflow": 2,
+    "_enableWrapText": true,
+    "_font": {
+      "__uuid__": "3c54767c-5ea3-493e-89b2-927e7504ba56",
+      "__expectedType__": "cc.TTFFont"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_isItalic": false,
+    "_isBold": false,
+    "_isUnderline": false,
+    "_underlineHeight": 2,
+    "_cacheMode": 0,
+    "_id": "17YXhelwdNa76KJFDKWqqO"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 167
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 800,
+      "height": 310
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "c9GlQT9ERKl5bwDMTgKSM8"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 155
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1118,
+      "height": 1055
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "01w4N2B/pHLZwb2gA69+Ud"
+  },
+  {
+    "__type__": "5d8d59fcxRAqr+FFHp4TSn3",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 155
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_transformReference": null,
+    "_isSameTransform": false,
+    "_isDependingOnSideRatio": false,
+    "_limitSideRatio": 1.35,
+    "commonTransform": {
+      "__id__": 180
+    },
+    "commonTransformBelowSideRatio": {
+      "__id__": 186
+    },
+    "landscapeTransform": {
+      "__id__": 192
+    },
+    "landscapeTransformBelowSideRatio": {
+      "__id__": 198
+    },
+    "portraitTransform": {
+      "__id__": 204
+    },
+    "portraitTransformBelowSideRatio": {
+      "__id__": 210
+    },
+    "_id": "4dsrx9FaRJ8riV0AROe24l"
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 181
+    },
+    "_scaleComponent": {
+      "__id__": 182
+    },
+    "_rotationComponent": {
+      "__id__": 183
+    },
+    "_anchorComponent": {
+      "__id__": 184
+    },
+    "_sizeComponent": {
+      "__id__": 185
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.75,
+      "y": 0.575
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.45,
+      "y": 0.45
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 187
+    },
+    "_scaleComponent": {
+      "__id__": 188
+    },
+    "_rotationComponent": {
+      "__id__": 189
+    },
+    "_anchorComponent": {
+      "__id__": 190
+    },
+    "_sizeComponent": {
+      "__id__": 191
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 193
+    },
+    "_scaleComponent": {
+      "__id__": 194
+    },
+    "_rotationComponent": {
+      "__id__": 195
+    },
+    "_anchorComponent": {
+      "__id__": 196
+    },
+    "_sizeComponent": {
+      "__id__": 197
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.75,
+      "y": 0.575
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.45,
+      "y": 0.45
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 199
+    },
+    "_scaleComponent": {
+      "__id__": 200
+    },
+    "_rotationComponent": {
+      "__id__": 201
+    },
+    "_anchorComponent": {
+      "__id__": 202
+    },
+    "_sizeComponent": {
+      "__id__": 203
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 205
+    },
+    "_scaleComponent": {
+      "__id__": 206
+    },
+    "_rotationComponent": {
+      "__id__": 207
+    },
+    "_anchorComponent": {
+      "__id__": 208
+    },
+    "_sizeComponent": {
+      "__id__": 209
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.265,
+      "y": 0.12
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.45,
+      "y": 0.24
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 211
+    },
+    "_scaleComponent": {
+      "__id__": 212
+    },
+    "_rotationComponent": {
+      "__id__": 213
+    },
+    "_anchorComponent": {
+      "__id__": 214
+    },
+    "_sizeComponent": {
+      "__id__": 215
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "BonusPanel",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 7
+    },
+    "_children": [
+      {
+        "__id__": 217
+      },
+      {
+        "__id__": 220
+      },
+      {
+        "__id__": 228
+      },
+      {
+        "__id__": 236
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 244
+      },
+      {
+        "__id__": 245
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 922.913,
+      "y": 976.759,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "04JujCn+BJ4oji5l11n5XC"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Text",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 216
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 218
+      },
+      {
+        "__id__": 219
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 215.685,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "30Fna3Aa9PTJUTc4UzlaRt"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 217
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 449.3,
+      "height": 126
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "0b1dDi1W1MdLT6wkD1LXTC"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 217
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_string": "Бонусы",
+    "_horizontalAlign": 1,
+    "_verticalAlign": 1,
+    "_actualFontSize": 100,
+    "_fontSize": 100,
+    "_fontFamily": "Arial",
+    "_lineHeight": 100,
+    "_overflow": 0,
+    "_enableWrapText": true,
+    "_font": {
+      "__uuid__": "3c54767c-5ea3-493e-89b2-927e7504ba56",
+      "__expectedType__": "cc.TTFFont"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_isItalic": false,
+    "_isBold": false,
+    "_isUnderline": false,
+    "_underlineHeight": 2,
+    "_cacheMode": 0,
+    "_id": "cbk+wB4XBHx6nc2ywSoHOj"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Bonus1",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 216
+    },
+    "_children": [
+      {
+        "__id__": 221
+      },
+      {
+        "__id__": 224
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 227
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": -400,
+      "y": -70.029,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "36iiLz80RPS6IUY3WOYz3r"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Back",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 220
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 222
+      },
+      {
+        "__id__": 223
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": -13.105,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "13U40JQg1N+INLFR1yt7B6"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 221
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 437,
+      "height": 451
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "c5lck47bxGWr8PieVFWUbx"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 221
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "629f9ebb-67a9-4e85-b00f-7a094fde4e61@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "efJet2YRFDh4M7S7r3ziUD"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Count",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 220
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 225
+      },
+      {
+        "__id__": 226
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": -104.837,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "c874lKBGJGTKQgf0bnWw7f"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 224
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 250,
+      "height": 100
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "f6T3P3aQFID6YLR5AY+saY"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 224
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_string": "5",
+    "_horizontalAlign": 1,
+    "_verticalAlign": 1,
+    "_actualFontSize": 100,
+    "_fontSize": 100,
+    "_fontFamily": "Arial",
+    "_lineHeight": 100,
+    "_overflow": 2,
+    "_enableWrapText": true,
+    "_font": {
+      "__uuid__": "3c54767c-5ea3-493e-89b2-927e7504ba56",
+      "__expectedType__": "cc.TTFFont"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_isItalic": false,
+    "_isBold": false,
+    "_isUnderline": false,
+    "_underlineHeight": 2,
+    "_cacheMode": 0,
+    "_id": "a24WVDWilN/Ji7LOtaPhAb"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 220
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 355,
+      "height": 375
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "6epwchCdJDu5gxlnERIXNc"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Bonus2",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 216
+    },
+    "_children": [
+      {
+        "__id__": 229
+      },
+      {
+        "__id__": 232
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 235
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": -70.029,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "09xONRxmRIcLTg2DoYlEyw"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Back",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 228
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 230
+      },
+      {
+        "__id__": 231
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": -13.105,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "eaSlo0KmFMiLhTAnl35bBv"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 229
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 437,
+      "height": 451
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "b67yEQH2tMErgPJe4k59uP"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 229
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "629f9ebb-67a9-4e85-b00f-7a094fde4e61@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "00P/gevEJNJIOYrYdGE90z"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Count",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 228
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 233
+      },
+      {
+        "__id__": 234
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": -104.837,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "96oYkWLlRIHKOIOGj3uaVk"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 232
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 250,
+      "height": 100
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "4d0JUXH4BGiIxG08skcgBx"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 232
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_string": "3",
+    "_horizontalAlign": 1,
+    "_verticalAlign": 1,
+    "_actualFontSize": 100,
+    "_fontSize": 100,
+    "_fontFamily": "Arial",
+    "_lineHeight": 100,
+    "_overflow": 2,
+    "_enableWrapText": true,
+    "_font": {
+      "__uuid__": "3c54767c-5ea3-493e-89b2-927e7504ba56",
+      "__expectedType__": "cc.TTFFont"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_isItalic": false,
+    "_isBold": false,
+    "_isUnderline": false,
+    "_underlineHeight": 2,
+    "_cacheMode": 0,
+    "_id": "8bsFo8DXdMNaN8ArAwVD4l"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 228
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 355,
+      "height": 375
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "0eYS7xQatDz4A9xHCIJY4w"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Bonus3",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 216
+    },
+    "_children": [
+      {
+        "__id__": 237
+      },
+      {
+        "__id__": 240
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 243
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 400,
+      "y": -70.029,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "74CkvTQPBDlIp0BaBlIURc"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Back",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 236
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 238
+      },
+      {
+        "__id__": 239
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": -13.105,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "d3eehwlCtK27GrghPKzkLY"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 237
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 437,
+      "height": 451
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "d7fqZr5XlC3JD5j2T2k9yG"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 237
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "629f9ebb-67a9-4e85-b00f-7a094fde4e61@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "34xp4sOm1D4533f0zIlAXu"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Count",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 236
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 241
+      },
+      {
+        "__id__": 242
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": -104.837,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "fdqy6irAlGQ6bNasQZDzGa"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 240
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 250,
+      "height": 100
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "40Tx1G72tFBLsN0t2utUb4"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 240
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_string": "15",
+    "_horizontalAlign": 1,
+    "_verticalAlign": 1,
+    "_actualFontSize": 100,
+    "_fontSize": 100,
+    "_fontFamily": "Arial",
+    "_lineHeight": 100,
+    "_overflow": 2,
+    "_enableWrapText": true,
+    "_font": {
+      "__uuid__": "3c54767c-5ea3-493e-89b2-927e7504ba56",
+      "__expectedType__": "cc.TTFFont"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_isItalic": false,
+    "_isBold": false,
+    "_isUnderline": false,
+    "_underlineHeight": 2,
+    "_cacheMode": 0,
+    "_id": "39XLwLV3BOEKUrHBRu4WUg"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 236
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 355,
+      "height": 375
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "88qtr7Bj9CR4iTjjdtj1Q3"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 216
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1180,
+      "height": 550
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "f6+LsxKs5E2aoWWtREQ4UJ"
+  },
+  {
+    "__type__": "5d8d59fcxRAqr+FFHp4TSn3",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 216
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_transformReference": null,
+    "_isSameTransform": false,
+    "_isDependingOnSideRatio": false,
+    "_limitSideRatio": 1.35,
+    "commonTransform": {
+      "__id__": 246
+    },
+    "commonTransformBelowSideRatio": {
+      "__id__": 252
+    },
+    "landscapeTransform": {
+      "__id__": 258
+    },
+    "landscapeTransformBelowSideRatio": {
+      "__id__": 264
+    },
+    "portraitTransform": {
+      "__id__": 270
+    },
+    "portraitTransformBelowSideRatio": {
+      "__id__": 276
+    },
+    "_id": "9br8h/zL5MRLJvNq8k5yYo"
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 247
+    },
+    "_scaleComponent": {
+      "__id__": 248
+    },
+    "_rotationComponent": {
+      "__id__": 249
+    },
+    "_anchorComponent": {
+      "__id__": 250
+    },
+    "_sizeComponent": {
+      "__id__": 251
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.75,
+      "y": 0.18
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.45,
+      "y": 0.275
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 253
+    },
+    "_scaleComponent": {
+      "__id__": 254
+    },
+    "_rotationComponent": {
+      "__id__": 255
+    },
+    "_anchorComponent": {
+      "__id__": 256
+    },
+    "_sizeComponent": {
+      "__id__": 257
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 259
+    },
+    "_scaleComponent": {
+      "__id__": 260
+    },
+    "_rotationComponent": {
+      "__id__": 261
+    },
+    "_anchorComponent": {
+      "__id__": 262
+    },
+    "_sizeComponent": {
+      "__id__": 263
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.75,
+      "y": 0.18
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.45,
+      "y": 0.275
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 265
+    },
+    "_scaleComponent": {
+      "__id__": 266
+    },
+    "_rotationComponent": {
+      "__id__": 267
+    },
+    "_anchorComponent": {
+      "__id__": 268
+    },
+    "_sizeComponent": {
+      "__id__": 269
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 271
+    },
+    "_scaleComponent": {
+      "__id__": 272
+    },
+    "_rotationComponent": {
+      "__id__": 273
+    },
+    "_anchorComponent": {
+      "__id__": 274
+    },
+    "_sizeComponent": {
+      "__id__": 275
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.735,
+      "y": 0.12
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.45,
+      "y": 0.275
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 277
+    },
+    "_scaleComponent": {
+      "__id__": 278
+    },
+    "_rotationComponent": {
+      "__id__": 279
+    },
+    "_anchorComponent": {
+      "__id__": 280
+    },
+    "_sizeComponent": {
+      "__id__": 281
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Field",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 7
+    },
+    "_children": [
+      {
+        "__id__": 283
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 286
+      },
+      {
+        "__id__": 287
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": -876.647,
+      "y": 1441.598,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "a2QN7ntDRBjJTYUp1S6ZgT"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Back",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 282
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 284
+      },
+      {
+        "__id__": 285
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "a1VYGXwKZHhrd61fIN1mZF"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 283
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1635,
+      "height": 1819
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "9a6vKmqGNFqq38p+ibAjy4"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 283
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_visFlags": 0,
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "c865c767-bab5-4526-be81-62fd0be4f028@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": "27uo+KvtNGLYeBlzZseHjE"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 282
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1635,
+      "height": 1819
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "04Jhyxfq1ARZHxpmbrNIQc"
+  },
+  {
+    "__type__": "5d8d59fcxRAqr+FFHp4TSn3",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 282
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_transformReference": null,
+    "_isSameTransform": false,
+    "_isDependingOnSideRatio": false,
+    "_limitSideRatio": 1.35,
+    "commonTransform": {
+      "__id__": 288
+    },
+    "commonTransformBelowSideRatio": {
+      "__id__": 294
+    },
+    "landscapeTransform": {
+      "__id__": 300
+    },
+    "landscapeTransformBelowSideRatio": {
+      "__id__": 306
+    },
+    "portraitTransform": {
+      "__id__": 312
+    },
+    "portraitTransformBelowSideRatio": {
+      "__id__": 318
+    },
+    "_id": "beza2H9RRAnr+Bbz0T1GZ3"
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 289
+    },
+    "_scaleComponent": {
+      "__id__": 290
+    },
+    "_rotationComponent": {
+      "__id__": 291
+    },
+    "_anchorComponent": {
+      "__id__": 292
+    },
+    "_sizeComponent": {
+      "__id__": 293
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.25,
+      "y": 0.425
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.45,
+      "y": 0.8
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 295
+    },
+    "_scaleComponent": {
+      "__id__": 296
+    },
+    "_rotationComponent": {
+      "__id__": 297
+    },
+    "_anchorComponent": {
+      "__id__": 298
+    },
+    "_sizeComponent": {
+      "__id__": 299
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 301
+    },
+    "_scaleComponent": {
+      "__id__": 302
+    },
+    "_rotationComponent": {
+      "__id__": 303
+    },
+    "_anchorComponent": {
+      "__id__": 304
+    },
+    "_sizeComponent": {
+      "__id__": 305
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.25,
+      "y": 0.425
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.45,
+      "y": 0.8
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 307
+    },
+    "_scaleComponent": {
+      "__id__": 308
+    },
+    "_rotationComponent": {
+      "__id__": 309
+    },
+    "_anchorComponent": {
+      "__id__": 310
+    },
+    "_sizeComponent": {
+      "__id__": 311
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 313
+    },
+    "_scaleComponent": {
+      "__id__": 314
+    },
+    "_rotationComponent": {
+      "__id__": 315
+    },
+    "_anchorComponent": {
+      "__id__": 316
+    },
+    "_sizeComponent": {
+      "__id__": 317
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.55
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0.9,
+      "y": 0.6
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 319
+    },
+    "_scaleComponent": {
+      "__id__": 320
+    },
+    "_rotationComponent": {
+      "__id__": 321
+    },
+    "_anchorComponent": {
+      "__id__": 322
+    },
+    "_sizeComponent": {
+      "__id__": 323
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 100,
+      "height": 100
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "f6Jx1olU5F/7cUyueB+K/M"
+  },
+  {
+    "__type__": "5d8d59fcxRAqr+FFHp4TSn3",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 7
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_transformReference": null,
+    "_isSameTransform": true,
+    "_isDependingOnSideRatio": false,
+    "_limitSideRatio": 1.35,
+    "commonTransform": {
+      "__id__": 326
+    },
+    "commonTransformBelowSideRatio": {
+      "__id__": 332
+    },
+    "landscapeTransform": {
+      "__id__": 338
+    },
+    "landscapeTransformBelowSideRatio": {
+      "__id__": 344
+    },
+    "portraitTransform": {
+      "__id__": 350
+    },
+    "portraitTransformBelowSideRatio": {
+      "__id__": 356
+    },
+    "_id": "065KrYDA5Bi6QsYar8BdVY"
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 327
+    },
+    "_scaleComponent": {
+      "__id__": 328
+    },
+    "_rotationComponent": {
+      "__id__": 329
+    },
+    "_anchorComponent": {
+      "__id__": 330
+    },
+    "_sizeComponent": {
+      "__id__": 331
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": true,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -0.5,
+      "y": -0.5
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 333
+    },
+    "_scaleComponent": {
+      "__id__": 334
+    },
+    "_rotationComponent": {
+      "__id__": 335
+    },
+    "_anchorComponent": {
+      "__id__": 336
+    },
+    "_sizeComponent": {
+      "__id__": 337
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 339
+    },
+    "_scaleComponent": {
+      "__id__": 340
+    },
+    "_rotationComponent": {
+      "__id__": 341
+    },
+    "_anchorComponent": {
+      "__id__": 342
+    },
+    "_sizeComponent": {
+      "__id__": 343
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 345
+    },
+    "_scaleComponent": {
+      "__id__": 346
+    },
+    "_rotationComponent": {
+      "__id__": 347
+    },
+    "_anchorComponent": {
+      "__id__": 348
+    },
+    "_sizeComponent": {
+      "__id__": 349
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 351
+    },
+    "_scaleComponent": {
+      "__id__": 352
+    },
+    "_rotationComponent": {
+      "__id__": 353
+    },
+    "_anchorComponent": {
+      "__id__": 354
+    },
+    "_sizeComponent": {
+      "__id__": 355
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "TransformController",
+    "_changeValueType": 6,
+    "_positionComponent": {
+      "__id__": 357
+    },
+    "_scaleComponent": {
+      "__id__": 358
+    },
+    "_rotationComponent": {
+      "__id__": 359
+    },
+    "_anchorComponent": {
+      "__id__": 360
+    },
+    "_sizeComponent": {
+      "__id__": 361
+    }
+  },
+  {
+    "__type__": "PositionComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_positionType": 0,
+    "_layer": 0,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "ScaleComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_sizeMode": 0,
+    "_fitMode": 0,
+    "_layer": 0,
+    "_desiredSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_padding": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    }
+  },
+  {
+    "__type__": "RotationComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_rotation": 0
+  },
+  {
+    "__type__": "AnchorComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_anchor": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "SizeComponent",
+    "_isActive": false,
+    "_isUsingTransformReference": false,
+    "_isConsiderReferenceScale": false,
+    "_isTransformReferenceExists": false,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 4
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 960,
+      "height": 640
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "d6rUX5yfhMlKoWX2bSbawx"
+  },
+  {
+    "__type__": "cc.Canvas",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 4
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_cameraComponent": {
+      "__id__": 6
+    },
+    "_alignCanvasWithScreen": true,
+    "_id": "12O/ljcVlEqLmVm3U2gEOQ"
+  },
+  {
+    "__type__": "cc.Widget",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 4
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_alignFlags": 45,
+    "_target": null,
+    "_left": 0,
+    "_right": 0,
+    "_top": 5.684341886080802e-14,
+    "_bottom": 5.684341886080802e-14,
+    "_horizontalCenter": 0,
+    "_verticalCenter": 0,
+    "_isAbsLeft": true,
+    "_isAbsRight": true,
+    "_isAbsTop": true,
+    "_isAbsBottom": true,
+    "_isAbsHorizontalCenter": true,
+    "_isAbsVerticalCenter": true,
+    "_originalWidth": 0,
+    "_originalHeight": 0,
+    "_alignMode": 2,
+    "_lockFlags": 0,
+    "_id": "c5V1EV8IpMtrIvY1OE9t2u"
+  },
+  {
+    "__type__": "cc.SceneGlobals",
+    "ambient": {
+      "__id__": 366
+    },
+    "shadows": {
+      "__id__": 367
+    },
+    "_skybox": {
+      "__id__": 368
+    },
+    "fog": {
+      "__id__": 369
+    },
+    "octree": {
+      "__id__": 370
+    }
+  },
+  {
+    "__type__": "cc.AmbientInfo",
+    "_skyColorHDR": {
+      "__type__": "cc.Vec4",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 0.520833125
+    },
+    "_skyColor": {
+      "__type__": "cc.Vec4",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 0.520833125
+    },
+    "_skyIllumHDR": 20000,
+    "_skyIllum": 20000,
+    "_groundAlbedoHDR": {
+      "__type__": "cc.Vec4",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 0
+    },
+    "_groundAlbedo": {
+      "__type__": "cc.Vec4",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 0
+    },
+    "_skyColorLDR": {
+      "__type__": "cc.Vec4",
+      "x": 0.2,
+      "y": 0.5,
+      "z": 0.8,
+      "w": 1
+    },
+    "_skyIllumLDR": 20000,
+    "_groundAlbedoLDR": {
+      "__type__": "cc.Vec4",
+      "x": 0.2,
+      "y": 0.2,
+      "z": 0.2,
+      "w": 1
+    }
+  },
+  {
+    "__type__": "cc.ShadowsInfo",
+    "_enabled": false,
+    "_type": 0,
+    "_normal": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 1,
+      "z": 0
+    },
+    "_distance": 0,
+    "_shadowColor": {
+      "__type__": "cc.Color",
+      "r": 76,
+      "g": 76,
+      "b": 76,
+      "a": 255
+    },
+    "_maxReceived": 4,
+    "_size": {
+      "__type__": "cc.Vec2",
+      "x": 512,
+      "y": 512
+    }
+  },
+  {
+    "__type__": "cc.SkyboxInfo",
+    "_envLightingType": 0,
+    "_envmapHDR": null,
+    "_envmap": null,
+    "_envmapLDR": null,
+    "_diffuseMapHDR": null,
+    "_diffuseMapLDR": null,
+    "_enabled": false,
+    "_useHDR": true
+  },
+  {
+    "__type__": "cc.FogInfo",
+    "_type": 0,
+    "_fogColor": {
+      "__type__": "cc.Color",
+      "r": 200,
+      "g": 200,
+      "b": 200,
+      "a": 255
+    },
+    "_enabled": false,
+    "_fogDensity": 0.3,
+    "_fogStart": 0.5,
+    "_fogEnd": 300,
+    "_fogAtten": 5,
+    "_fogTop": 1.5,
+    "_fogRange": 1.2,
+    "_accurate": false
+  },
+  {
+    "__type__": "cc.OctreeInfo",
+    "_enabled": false,
+    "_minPos": {
+      "__type__": "cc.Vec3",
+      "x": -1024,
+      "y": -1024,
+      "z": -1024
+    },
+    "_maxPos": {
+      "__type__": "cc.Vec3",
+      "x": 1024,
+      "y": 1024,
+      "z": 1024
+    },
+    "_depth": 8
+  }
+]
