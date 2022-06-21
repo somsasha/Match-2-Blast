@@ -1,0 +1,32 @@
+enum Events {
+    WINDOW_RESIZED,
+
+    CAMERA_ZOOM,
+    CAMERA_SHAKE,
+
+    INPUT,
+    INACTIVE,
+
+    EFFECT_SPAWN,
+
+    UPDATE_TICK,
+
+    ANALYTICS_SEND_EVENT,
+    PLAYABLE_START,
+    FIRST_TAP,
+    REDIRECT,
+    PLAYER_ACTION,
+    PLAYABLE_RESTART,
+    RESULT_SHOW,
+
+    RESULT,
+    RESTART,
+
+    CANNON_TICK,
+    DISK_STOPPED,
+    HOLE_CLOSED,
+    LEVEL_END,
+    DESTROY_DISKS
+}
+
+export default Events;
