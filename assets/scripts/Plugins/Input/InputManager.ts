@@ -64,8 +64,8 @@ export default class InputManager extends EventTarget {
             this.currentTouchID = eventTouch.getID();
         }
 
-        this.emit(InputTypes.None.toString(), { type, eventTouch, touchSource });
-        this.emit(type.toString(), { type, eventTouch, touchSource });
+        this.emit(InputTypes.None.toString(), { type: type, touch: eventTouch, source: touchSource });
+        this.emit(type.toString(), { type: type, touch: eventTouch, source: touchSource });
     }
 
     //#endregion
