@@ -1,5 +1,5 @@
 import { _decorator, Enum, SpriteFrame } from 'cc';
-import TileColors from '../Enums/TileColors';
+import TileColors from './TileColors';
 const { ccclass, property } = _decorator;
 
 @ccclass('ColorTileType')

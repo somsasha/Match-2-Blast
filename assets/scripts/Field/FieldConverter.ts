@@ -3,17 +3,22 @@ import { math, Size, UITransform, Vec2 } from "cc";
 export class FieldConverter {
     private fieldSize: Size = math.size();
     private fieldUiTransform: UITransform = null;
-    private tileSize: Size = math.size();
     
+    private tileSize: Size = math.size();
+
     private fieldRealSize: Size = math.size();
     private tileScaledSize: Size = math.size();
     private tilesOffset: Vec2 = math.v2();
     private tilesStartPosition: Vec2 = math.v2();
 
     private tileScale: number = 1;
-    // #TODO
-    public get tilesScale(): number {
+
+    public get TILE_SCALE(): number {
         return this.tileScale;
+    }
+
+    public get FIELD_SIZE(): Size {
+        return this.fieldSize;
     }
 
     public constructor(fieldSize: Size, uiTransform: UITransform, tileSize: Size) {
@@ -33,7 +38,6 @@ export class FieldConverter {
         const tilesOffsetY = (this.fieldRealSize.height - this.tileScaledSize.height * this.fieldSize.height) / this.fieldSize.height;
         this.tilesOffset = math.v2(tilesOffsetX, tilesOffsetY);
 
-        // get up-left tile position
         const tilesStartPosX = -this.fieldRealSize.width / 2 + this.tilesOffset.x / 2 + this.tileScaledSize.width / 2;
         const tilesStartPosY = this.fieldRealSize.height / 2 - this.tilesOffset.y / 2 - this.tileScaledSize.width / 2;
         this.tilesStartPosition = math.v2(tilesStartPosX, tilesStartPosY);

@@ -1,5 +1,6 @@
 import { _decorator, Vec2, SpriteFrame } from 'cc';
-import TileColors from '../Enums/TileColors';
+import TileColors from './TileColors';
+import { Mediator } from '../Mediators/Mediator';
 import { Tile } from './Tile';
 const { ccclass, property } = _decorator;
 
@@ -7,17 +8,9 @@ const { ccclass, property } = _decorator;
 export class ColorTile extends Tile {
     public color: TileColors = TileColors.Red;
 
-    public init(position: Vec2, color: TileColors, sprite: SpriteFrame): void {
-        this.position = position;
+    public init(tilesManager: Mediator, color: TileColors, sprite: SpriteFrame): void {
+        this.mediator = tilesManager;
         this.color = color;
         this.viewer.setSprite(sprite);
-    }
-
-    public tap(): void {
-
-    }
-
-    public remove(): void {
-        this.node.destroy();
     }
 }

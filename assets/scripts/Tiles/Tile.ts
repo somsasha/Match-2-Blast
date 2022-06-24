@@ -1,12 +1,14 @@
-import { _decorator, Component, Vec2, math } from 'cc';
+import { _decorator, Component, Vec2 } from 'cc';
 import Easings from '../Enums/Easings';
+import { Mediator } from '../Mediators/Mediator';
+import TileManagerEvents from '../Mediators/TileManager/TileManagerEvents';
 import { ITile } from './ITile';
 import { TileViewer } from './TileViewer';
 const { ccclass, property } = _decorator;
 
 @ccclass('Tile')
 export abstract class Tile extends Component implements ITile {
-    public position: Vec2 = math.v2();
+    public mediator: Mediator;
 
     protected viewer: TileViewer = null;
 
@@ -14,11 +16,24 @@ export abstract class Tile extends Component implements ITile {
         this.viewer = this.node.getComponent(TileViewer);
     }
 
-    public fall(position: Vec2, realPosition: Vec2, duration: number, easing: Easings): void {
-        this.position = position;
-        this.viewer.moveTo(realPosition, duration, easing);
+    public fall(position: Vec2, duration: number, easing: Easings): void {
+        this.viewer.moveTo(position, duration, easing);
     }
 
-    public abstract tap(): void;
-    public abstract remove(): void;
+    public remove(): void {
+        this.mediator.notify(this, TileManagerEvents.Remove);
+        this.viewer.remove();
+    }
+
+    public tap(): void {
+        this.mediator.notify(this, TileManagerEvents.Tap);
+    }
+
+    public teleport(position: Vec2): void {
+        this.viewer.setPosition(position);
+    }
+
+    public runSpawnAnimation(): void {
+        this.viewer.runSpawnAnimation();
+    }
 }
