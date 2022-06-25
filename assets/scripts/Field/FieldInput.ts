@@ -18,6 +18,14 @@ export class FieldInput {
         InputManager.getInstance().on(InputTypes.Down, this.onInput, this);
     }
     
+    public enable(): void {
+        this.isActive = true;
+    }
+
+    public disable(): void {
+        this.isActive = false;
+    }
+    
     private onInput(data: InputManagerData): void {
         if (!this.isActive || data.source !== InputSources.Field) return;
 

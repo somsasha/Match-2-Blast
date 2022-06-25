@@ -11,10 +11,4 @@ export default class Utilities {
     static getRandomFloat(min: number, max: number): number {
         return Math.random() * (max - min + 1) + min;
     }
-
-    static getRandomVec2(min: Vec2, max: Vec2): Vec2 {
-        const vector = new Vec2(this.getRandomFloat(min.x, max.x), this.getRandomFloat(min.y, max.y));
-
-        return vector;
-    }
 }

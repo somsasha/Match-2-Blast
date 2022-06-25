@@ -1,4 +1,4 @@
-import { _decorator, Component, Enum, CCInteger, CCFloat, math, UITransform, Vec2, Size } from 'cc';
+import { _decorator, Component, Enum, CCFloat, math, UITransform, Vec2 } from 'cc';
 import Easings from '../Plugins/Enums/Easings';
 import { ITile } from '../Tiles/ITile';
 import { FieldGenerator } from './FieldGenerator';
@@ -9,63 +9,52 @@ import { FieldInput } from './FieldInput';
 import { FieldState } from './FieldStates/FieldState';
 import { ColorTile } from '../Tiles/ColorTile';
 import { SuperTile } from '../Tiles/SuperTile';
-import { BombBooster } from '../Boosters/BombBooster';
 import { BoosterManager } from '../Mediators/BoosterManager/BoosterManager';
-import { AncientBooster } from '../Boosters/AncientBooster';
-import { TeleportBooster } from '../Boosters/TeleportBooster';
 import { ReadyFieldState } from './FieldStates/ReadyFieldState';
 import { BusyFieldState } from './FieldStates/BusyFieldState';
+import { FieldConfig } from './FieldConfig';
+import { GlobalEvent } from '../Plugins/GlobalEvent';
+import Events from '../Plugins/Enums/Events';
 const { ccclass, property } = _decorator;
 
 @ccclass('Field')
 export class Field extends Component {
-    @property(Size) fieldSize: Size = math.size(10, 10);
-
-    @property(CCInteger) tilesToMatch: number = 2;
     @property(CCFloat) tileFallTimeByCell: number = 0.5;
     @property(CCFloat) tileMaxFallTime: number = 1;
     @property({ type: Enum(Easings) }) tileFallEasing: Easings = Easings.bounceOut;
 
-    @property(CCInteger) remixCount: number = 2;
-
     @property(FieldGeneratorConfig) fieldGeneratorConfig: FieldGeneratorConfig = null;
-    @property(CCInteger) bombRadius: number = 2;
 
-    @property(TeleportBooster) booster1: TeleportBooster = null;
-    @property(BombBooster) booster2: BombBooster = null;
-    @property(AncientBooster) booster3: AncientBooster = null;
+    public config: FieldConfig = null;
 
     public boosterManager: BoosterManager = null;
     public tileManager: TileManager = null;
 
     private fieldConverter: FieldConverter = null;
     private fieldGenerator: FieldGenerator = null;
+    private fieldInput: FieldInput = null;
 
     private currentRemixes: number = 0;
 
-    private state: FieldState = null;
+    private state: FieldState = new BusyFieldState(this);
 
-    onLoad() {
-        this.state = new ReadyFieldState(this);
+    public init(fieldConfig: FieldConfig, tileManager: TileManager, boosterManager: BoosterManager): void {
+        this.config = fieldConfig;
+        this.tileManager = tileManager;
+        this.boosterManager = boosterManager;
 
         const uiTransform = this.node.getComponent(UITransform);
         const tileSize = this.fieldGeneratorConfig.tilePrefab.data.getComponent(UITransform).contentSize;
 
-        this.tileManager = new TileManager(this.fieldSize, this);
-
-        this.fieldConverter = new FieldConverter(this.fieldSize, uiTransform, tileSize);
+        this.fieldConverter = new FieldConverter(this.config.fieldSize, uiTransform, tileSize);
         this.fieldGenerator = this.node.addComponent(FieldGenerator);
         this.fieldGenerator.init(this.fieldGeneratorConfig, this.fieldConverter, this.tileManager);
-        
+
         this.fieldGenerator.createField();
 
-        // #TODO
-        this.boosterManager = new BoosterManager(this, [this.booster1, this.booster2, this.booster3]);
-        this.booster1.init(this.boosterManager, 3);
-        this.booster2.init(this.boosterManager, 2);
-        this.booster3.init(this.boosterManager, 1);
-        
-        new FieldInput(this.fieldConverter, this.tileManager);
+        this.fieldInput = new FieldInput(this.fieldConverter, this.tileManager);
+
+        this.state = new ReadyFieldState(this);
     }
 
     public changeState(state: FieldState): void {
@@ -94,7 +83,7 @@ export class Field extends Component {
         }
     }
 
-    public async removeTiles(tiles: ITile[]): Promise<void> {
+    public async removeTiles(tiles: ITile[], isRecreate: boolean = false): Promise<void> {
         const previusState = this.state;
         this.changeState(new BusyFieldState(this));
 
@@ -102,12 +91,15 @@ export class Field extends Component {
             tiles[i].remove();
         }
 
+        if (!isRecreate) {
+            GlobalEvent.getInstance().emit(Events.TILES_REMOVED, tiles.length);
+        }
+
         await new Promise((resolve, reject) => this.scheduleOnce(resolve, 0.5));
         await this.updateField();
 
         if (await this.checkFail()) {
-            console.log('FAIL');
-            return;
+            GlobalEvent.getInstance().emit(Events.RESULT, false);
         }
 
         this.changeState(new ReadyFieldState(this));
@@ -124,8 +116,7 @@ export class Field extends Component {
         secondTile.teleport(firstPosition);
 
         if (await this.checkFail()) {
-            console.log('FAIL');
-            return;
+            GlobalEvent.getInstance().emit(Events.RESULT, false);
         }
     }
 
@@ -163,6 +154,14 @@ export class Field extends Component {
         return siblings;
     }
 
+    public enable(): void {
+        this.fieldInput.enable();
+    }
+
+    public disable(): void {
+        this.fieldInput.disable();
+    }
+
     private isColorTilesSiblings(firstTile: ColorTile, secondTile: ColorTile): boolean {
         if (firstTile.color === secondTile.color) {
             return true;
@@ -180,18 +179,15 @@ export class Field extends Component {
             if (tile instanceof SuperTile) {
                 return false;
             } else if (tile instanceof ColorTile) {
-                if (this.getColorTileSiblings(tile, []).length >= this.tilesToMatch) {
+                if (this.getColorTileSiblings(tile, []).length >= this.config.tilesToMatch) {
                     return false;
                 }
             }
         }
 
-        if (this.currentRemixes < this.remixCount) {
+        if (this.currentRemixes < this.config.remixCount) {
             await this.remixField();
-
-            if (!(await this.checkFail())) {
-                return false;
-            }
+            return false;
         }
 
         return true;
@@ -199,18 +195,15 @@ export class Field extends Component {
 
     private async remixField(): Promise<void> {
         this.currentRemixes += 1;
-
-        await this.removeTiles(this.tileManager.getAll());
-        this.fieldGenerator.createField();
-        return new Promise((resolve, reject) => this.scheduleOnce(resolve, 0.5));
+        await this.removeTiles(this.tileManager.getAll(), true);
     }
 
     private async updateField(): Promise<void> {
         let maxDelay = 0;
 
-        for (let x = 0; x < this.fieldSize.width; x++) {
+        for (let x = 0; x < this.config.fieldSize.width; x++) {
             let emptySpaces: number[] = [];
-            for (let y = this.fieldSize.height - 1; y >= 0; y--) {
+            for (let y = this.config.fieldSize.height - 1; y >= 0; y--) {
                 const tile = this.tileManager.getTileByPosition(math.v2(x, y));
 
                 if (!tile) {

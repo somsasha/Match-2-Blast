@@ -55,7 +55,7 @@ export class FieldConverter {
 
         const x = Math.round((touchLocalPosition.x - this.tilesStartPosition.x) / (this.tileScaledSize.width + this.tilesOffset.x));
         const y = -Math.round((touchLocalPosition.y - this.tilesStartPosition.y) / (this.tileScaledSize.height + this.tilesOffset.y));
-        
+
         return math.v2(x, y);
     }
 }

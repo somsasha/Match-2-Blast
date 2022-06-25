@@ -31,6 +31,10 @@ export default class InputManager extends EventTarget {
         super.off<any>('' + key, callback, target);
     }
 
+    public clearCache(): void {
+        this.currentTouchID = null;
+    }
+
     public static getInstance(): InputManager {
         if (this.instance === null) {
             this.instance = new InputManager();

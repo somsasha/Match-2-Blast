@@ -1,3 +1,5 @@
+import Events from "../../Plugins/Enums/Events";
+import { GlobalEvent } from "../../Plugins/GlobalEvent";
 import { ColorTile } from "../../Tiles/ColorTile";
 import { ITile } from "../../Tiles/ITile";
 import { FieldState } from "./FieldState";
@@ -15,7 +17,12 @@ export class ColorTileFieldState extends FieldState {
 
         const tilesCount = tilesToRemove.length;
         
-        if (tilesCount < this.field.tilesToMatch) return;
+        if (tilesCount < this.field.config.tilesToMatch) {
+            this.field.changeState(new ReadyFieldState(this.field));
+            return;
+        }
+
+        GlobalEvent.getInstance().emit(Events.PLAYER_SPENT_TURN);
 
         this.field.spawnSuperTile(startTilePosition, tilesCount);
         await this.field.removeTiles(tilesToRemove);

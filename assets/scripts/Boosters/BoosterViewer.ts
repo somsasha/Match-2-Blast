@@ -1,5 +1,4 @@
-import { _decorator, Component, Sprite, SpriteFrame, Vec2, Tween, Node, math, easing, Animation, Label } from 'cc';
-import Easings from '../Enums/Easings';
+import { _decorator, Component, Tween, Node, math, easing, Label } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('BoosterViewer')

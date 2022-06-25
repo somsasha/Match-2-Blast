@@ -12,15 +12,16 @@ import { ReadyFieldState } from "../../Field/FieldStates/ReadyFieldState";
 
 export class BoosterManager implements Mediator {
     private field: Field = null;
-    private boosters: IBooster[] = [];
     private activeBooster: IBooster = null;
 
-    constructor(field: Field, boosters: IBooster[]) {
+    private isActive: boolean = true;
+
+    constructor(field: Field) {
         this.field = field;
-        this.boosters = boosters;
     }
 
     public notify(booster: IBooster, event: BoosterManagerEvents): void {
+        if (!this.isActive) return;
         if (event === BoosterManagerEvents.Tap) {
             if (this.activeBooster) {
                 this.activeBooster.setBoosterActive(false);
@@ -49,6 +50,14 @@ export class BoosterManager implements Mediator {
             this.activeBooster.setBoosterActive(false);
             this.activeBooster = null;
         }
+    }
+
+    public enable(): void {
+        this.isActive = true;
+    }
+
+    public disable(): void {
+        this.isActive = false;
     }
 
     private getBoosterState(booster: IBooster): FieldState {
