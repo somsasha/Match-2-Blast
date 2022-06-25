@@ -1,15 +1,11 @@
-import { TileManager } from "../../Mediators/TileManager/TileManager";
 import { ColorTile } from "../../Tiles/ColorTile";
 import { ITile } from "../../Tiles/ITile";
 import { FieldState } from "./FieldState";
+import { ReadyFieldState } from "./ReadyFieldState";
 
 export class ColorTileFieldState extends FieldState {
-    private tileManager: TileManager = null;
-
-    public async interact(tile: ITile, tileManager: TileManager): Promise<void> {
-        this.tileManager = tileManager;
-
-        const startTilePosition = this.tileManager.getTilePosition(tile);
+    public async interact(tile: ITile): Promise<void> {
+        const startTilePosition = this.field.tileManager.getTilePosition(tile);
         let tilesToRemove: ColorTile[] = [];
 
         if (tile instanceof ColorTile) {
@@ -23,5 +19,7 @@ export class ColorTileFieldState extends FieldState {
 
         this.field.spawnSuperTile(startTilePosition, tilesCount);
         await this.field.removeTiles(tilesToRemove);
+
+        this.field.changeState(new ReadyFieldState(this.field));
     }
 }

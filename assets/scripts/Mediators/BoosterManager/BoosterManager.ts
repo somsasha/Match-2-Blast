@@ -1,10 +1,14 @@
 import { Field } from "../../Field/Field";
-import { BombFieldState } from "../../Field/FieldStates/BombFieldState";
 import { IBooster } from "../../Boosters/IBooster";
 import { Mediator } from "../Mediator";
 import BoosterManagerEvents from "./BoosterManagerEvents";
 import { BombBooster } from "../../Boosters/BombBooster";
-import { Booster } from "../../Boosters/Booster";
+import { AncientBooster } from "../../Boosters/AncientBooster";
+import { AncientBoosterFieldState } from "../../Field/FieldStates/AncientBoosterFieldState";
+import { BombBoosterFieldState } from "../../Field/FieldStates/BombBoosterFieldState";
+import { TeleportBoosterFieldState } from "../../Field/FieldStates/TeleportBoosterFieldState";
+import { FieldState } from "../../Field/FieldStates/FieldState";
+import { ReadyFieldState } from "../../Field/FieldStates/ReadyFieldState";
 
 export class BoosterManager implements Mediator {
     private field: Field = null;
@@ -20,30 +24,40 @@ export class BoosterManager implements Mediator {
         if (event === BoosterManagerEvents.Tap) {
             if (this.activeBooster) {
                 this.activeBooster.setBoosterActive(false);
-                this.field.selectBooster(null);
+                this.field.changeState(new ReadyFieldState(this.field));
             }
 
-            if (booster === this.activeBooster) {
+            if (this.activeBooster === booster) {
                 this.activeBooster = null;
             } else if (booster.count > 0) {
-                booster.setBoosterActive(true);
                 this.activeBooster = booster;
-                this.field.selectBooster(booster);
-            }            
-        }
-    }
-
-    public unselectBoosters(): void {
-        for (let i = 0; i < this.boosters.length; i++) {
-            this.boosters[i].setBoosterActive(false);
+                this.activeBooster.setBoosterActive(true);
+                this.field.changeState(this.getBoosterState(booster));
+            }
         }
     }
 
     public spendBooster(): void {
         if (this.activeBooster) {
-            this.activeBooster.count = this.activeBooster.count - 1;
+            this.activeBooster.count -= 1;
+            this.unselectBooster();
+        }
+    }
+
+    public unselectBooster(): void {
+        if (this.activeBooster) {
             this.activeBooster.setBoosterActive(false);
             this.activeBooster = null;
+        }
+    }
+
+    private getBoosterState(booster: IBooster): FieldState {
+        if (booster instanceof BombBooster) {
+            return new BombBoosterFieldState(this.field);
+        } else if (booster instanceof AncientBooster) {
+            return new AncientBoosterFieldState(this.field);
+        } else {
+            return new TeleportBoosterFieldState(this.field);
         }
     }
 }

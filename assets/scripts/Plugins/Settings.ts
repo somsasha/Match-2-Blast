@@ -1,8 +1,5 @@
-import { math, Vec2, View, _decorator } from "cc";
+import { math, Vec2, View } from "cc";
 
-const { ccclass, property } = _decorator;
-
-@ccclass('Settings')
 export default class Settings {
     private static instance: Settings = undefined;
 

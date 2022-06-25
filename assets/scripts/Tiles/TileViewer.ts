@@ -1,5 +1,5 @@
 import { _decorator, Component, Sprite, SpriteFrame, Vec2, Tween, Node, math, easing, Animation } from 'cc';
-import Easings from '../Enums/Easings';
+import Easings from '../Plugins/Enums/Easings';
 const { ccclass, property } = _decorator;
 
 @ccclass('TileViewer')

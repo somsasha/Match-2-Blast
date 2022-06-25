@@ -1,6 +1,5 @@
 import { Enum, Node, _decorator } from "cc";
 import { TransformComponent } from "../TransformComponent";
-import SimpleTransformComponent from "./Base/SimpleTransformComponent";
 
 import AnchorComponent from "./Components/AnchorComponent";
 import PositionComponent from "./Components/PositionComponent";

@@ -1,12 +1,6 @@
 import { math, Size, Vec2 } from "cc";
 import { Field } from "../../Field/Field";
-import { AncientFieldState } from "../../Field/FieldStates/AncientFieldState";
-import { BombFieldState } from "../../Field/FieldStates/BombFieldState";
-import { ColorTileFieldState } from "../../Field/FieldStates/ColorTileFieldState";
-import { RocketFieldState } from "../../Field/FieldStates/RocketFieldState";
 import { ITile } from "../../Tiles/ITile";
-import { SuperTile } from "../../Tiles/SuperTile";
-import TileAbilities from "../../Tiles/TileAbilities";
 import { Mediator } from "../Mediator";
 import TileManagerEvents from "./TileManagerEvents";
 
@@ -29,7 +23,7 @@ export class TileManager implements Mediator {
 
     public notify(tile: ITile, event: TileManagerEvents): void {
         if (event === TileManagerEvents.Tap) {
-            this.field.selectTile(tile);
+            this.field.interact(tile);
         } else if (event === TileManagerEvents.Remove) {
             this.removeTile(tile);
         }

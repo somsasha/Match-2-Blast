@@ -1,5 +1,5 @@
 import { _decorator, Component, Vec2 } from 'cc';
-import Easings from '../Enums/Easings';
+import Easings from '../Plugins/Enums/Easings';
 import { Mediator } from '../Mediators/Mediator';
 import TileManagerEvents from '../Mediators/TileManager/TileManagerEvents';
 import { ITile } from './ITile';

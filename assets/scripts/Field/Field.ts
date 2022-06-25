@@ -1,5 +1,5 @@
 import { _decorator, Component, Enum, CCInteger, CCFloat, math, UITransform, Vec2, Size } from 'cc';
-import Easings from '../Enums/Easings';
+import Easings from '../Plugins/Enums/Easings';
 import { ITile } from '../Tiles/ITile';
 import { FieldGenerator } from './FieldGenerator';
 import { FieldGeneratorConfig } from './FieldGeneratorConfig';
@@ -7,22 +7,14 @@ import { FieldConverter } from './FieldConverter';
 import { TileManager } from '../Mediators/TileManager/TileManager';
 import { FieldInput } from './FieldInput';
 import { FieldState } from './FieldStates/FieldState';
-import { ColorTileFieldState } from './FieldStates/ColorTileFieldState';
 import { ColorTile } from '../Tiles/ColorTile';
 import { SuperTile } from '../Tiles/SuperTile';
-import { BombBoosterFieldState } from './FieldStates/BombBoosterFieldState';
 import { BombBooster } from '../Boosters/BombBooster';
 import { BoosterManager } from '../Mediators/BoosterManager/BoosterManager';
-import { BombFieldState } from './FieldStates/BombFieldState';
-import TileAbilities from '../Tiles/TileAbilities';
-import { AncientFieldState } from './FieldStates/AncientFieldState';
-import { RocketFieldState } from './FieldStates/RocketFieldState';
-import { IBooster } from '../Boosters/IBooster';
 import { AncientBooster } from '../Boosters/AncientBooster';
-import { AncientBoosterFieldState } from './FieldStates/AncientBoosterFieldState';
-import { TeleportBoosterFieldState } from './FieldStates/TeleportBoosterFieldState';
 import { TeleportBooster } from '../Boosters/TeleportBooster';
 import { ReadyFieldState } from './FieldStates/ReadyFieldState';
+import { BusyFieldState } from './FieldStates/BusyFieldState';
 const { ccclass, property } = _decorator;
 
 @ccclass('Field')
@@ -43,11 +35,11 @@ export class Field extends Component {
     @property(BombBooster) booster2: BombBooster = null;
     @property(AncientBooster) booster3: AncientBooster = null;
 
+    public boosterManager: BoosterManager = null;
+    public tileManager: TileManager = null;
+
     private fieldConverter: FieldConverter = null;
     private fieldGenerator: FieldGenerator = null;
-    private tileManager: TileManager = null;
-    private boosterManager: BoosterManager = null;
-    private fieldInput: FieldInput = null;
 
     private currentRemixes: number = 0;
 
@@ -59,8 +51,9 @@ export class Field extends Component {
         const uiTransform = this.node.getComponent(UITransform);
         const tileSize = this.fieldGeneratorConfig.tilePrefab.data.getComponent(UITransform).contentSize;
 
-        this.fieldConverter = new FieldConverter(this.fieldSize, uiTransform, tileSize);
         this.tileManager = new TileManager(this.fieldSize, this);
+
+        this.fieldConverter = new FieldConverter(this.fieldSize, uiTransform, tileSize);
         this.fieldGenerator = this.node.addComponent(FieldGenerator);
         this.fieldGenerator.init(this.fieldGeneratorConfig, this.fieldConverter, this.tileManager);
         
@@ -72,82 +65,21 @@ export class Field extends Component {
         this.booster2.init(this.boosterManager, 2);
         this.booster3.init(this.boosterManager, 1);
         
-        this.fieldInput = new FieldInput(this.fieldConverter, this.tileManager);
+        new FieldInput(this.fieldConverter, this.tileManager);
     }
 
     public changeState(state: FieldState): void {
-        if (this.state instanceof ReadyFieldState || state instanceof ReadyFieldState) {
-            this.state = state;
-
-            if (this.state instanceof ReadyFieldState) {
-                this.boosterManager.unselectBoosters();
-            }
-        } else if (this.state instanceof BombBoosterFieldState && state instanceof BombFieldState
-            || this.state instanceof AncientBoosterFieldState && state instanceof AncientFieldState) {
-            this.state = state;
+        if (this.state instanceof BusyFieldState && !(state instanceof ReadyFieldState)) {
+            this.boosterManager.unselectBooster();
+            return;
         }
+
+        this.state = state;
     }
 
     public async interact(tile: ITile): Promise<void> {
-        if (this.state instanceof ReadyFieldState) return;
-
-        await this.state.interact(tile, this.tileManager);
-        await this.updateField();
-
-        if (await this.checkFail()) {
-            console.log('LOSE')
-        } else {
-            if (!(this.state instanceof TeleportBoosterFieldState)) {
-                this.changeState(new ReadyFieldState(this));
-            }
-        }
-    }
-
-    public selectTile(tile: ITile): void {
-        let newState = null;
-
-        if (this.state instanceof BombBoosterFieldState) {
-            newState = new BombFieldState(this);
-            this.boosterManager.spendBooster();
-        } else if (this.state instanceof AncientBoosterFieldState) {
-            newState = new AncientFieldState(this);
-            this.boosterManager.spendBooster();
-        } else if (this.state instanceof TeleportBoosterFieldState) {
-            newState = this.state;
-        } else if (tile instanceof SuperTile) {
-            if (tile.ability === TileAbilities.Ancient) {
-                newState = new AncientFieldState(this);
-            } else if (tile.ability === TileAbilities.Bomb) {
-                newState = new BombFieldState(this);
-            } else {
-                newState = new RocketFieldState(this);
-            }
-        } else {
-            newState = new ColorTileFieldState(this);
-        }
-
-        this.changeState(newState);
-        this.interact(tile);
-    }
-
-    public selectBooster(booster: IBooster): void {
-        let newState = null;
-
-        if (booster instanceof BombBooster) {
-            newState = new BombBoosterFieldState(this);
-        } else if (booster instanceof AncientBooster) {
-            newState = new AncientBoosterFieldState(this);
-        } else if (booster instanceof TeleportBooster) {
-            newState = new TeleportBoosterFieldState(this);
-        } else {
-            newState = new ReadyFieldState(this);
-        }
-
-        this.changeState(newState);
-
-        if (this.state instanceof ReadyFieldState) {
-            this.boosterManager.unselectBoosters();
-        }
+        if (this.state instanceof BusyFieldState) return;
+        await this.state.interact(tile);
     }
 
     public spawnSuperTile(position: Vec2, tilesMatchCount: number): void {
@@ -163,11 +95,23 @@ export class Field extends Component {
     }
 
     public async removeTiles(tiles: ITile[]): Promise<void> {
+        const previusState = this.state;
+        this.changeState(new BusyFieldState(this));
+
         for (let i = 0; i < tiles.length; i++) {
             tiles[i].remove();
         }
 
-        return new Promise((resolve, reject) => this.scheduleOnce(resolve, 0.5));
+        await new Promise((resolve, reject) => this.scheduleOnce(resolve, 0.5));
+        await this.updateField();
+
+        if (await this.checkFail()) {
+            console.log('FAIL');
+            return;
+        }
+
+        this.changeState(new ReadyFieldState(this));
+        this.changeState(previusState);
     }
 
     public async swapTiles(firstTile: ITile, secondTile: ITile): Promise<void> {
@@ -178,6 +122,11 @@ export class Field extends Component {
 
         firstTile.teleport(secondPosition);
         secondTile.teleport(firstPosition);
+
+        if (await this.checkFail()) {
+            console.log('FAIL');
+            return;
+        }
     }
 
     public getColorTileSiblings(tile: ColorTile, siblings: ColorTile[]): ColorTile[] {
@@ -295,6 +244,6 @@ export class Field extends Component {
             }
         }
 
-        return new Promise((resolve, reject) => this.scheduleOnce(resolve, maxDelay));
+        await new Promise((resolve, reject) => this.scheduleOnce(resolve, maxDelay));
     }
 }

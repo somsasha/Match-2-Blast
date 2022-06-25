@@ -1,4 +1,4 @@
-import { Mat4, Mesh, Node, Vec2, Vec3, Tween } from "cc";
+import { Vec2 } from "cc";
 
 export default class Utilities {
     static getRandomInt(min: number, max: number): number {

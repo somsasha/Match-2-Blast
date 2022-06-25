@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, math, instantiate, Size, Vec2, UITransform } from 'cc';
+import { _decorator, Component, Node, math, instantiate, Vec2 } from 'cc';
 import Utilities from '../Plugins/Utilities';
 import { ColorTile } from '../Tiles/ColorTile';
 import { FieldGeneratorConfig } from './FieldGeneratorConfig';

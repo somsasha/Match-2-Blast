@@ -1,7 +1,7 @@
 import { EventTarget, EventTouch } from "cc";
 
 import { GlobalEvent } from "../GlobalEvent";
-import Events from "../../Enums/Events";
+import Events from "../Enums/Events";
 
 import InputTypes from "./InputTypes";
 import InputSources from "./InputSources";

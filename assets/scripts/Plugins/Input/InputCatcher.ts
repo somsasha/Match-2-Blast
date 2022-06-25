@@ -2,7 +2,7 @@ import { Component, Enum, _decorator } from "cc";
 
 import InputSources from "./InputSources";
 import InputTypes from "./InputTypes";
-import Events from "../../Enums/Events";
+import Events from "../Enums/Events";
 import { GlobalEvent } from "../GlobalEvent";
 
 

@@ -1,4 +1,4 @@
-import { _decorator, Vec2, SpriteFrame } from 'cc';
+import { _decorator, SpriteFrame } from 'cc';
 import TileColors from './TileColors';
 import { Mediator } from '../Mediators/Mediator';
 import { Tile } from './Tile';

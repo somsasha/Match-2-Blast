@@ -1,4 +1,4 @@
-import { _decorator, Size, math, Prefab } from 'cc';
+import { _decorator, Prefab } from 'cc';
 import { ColorTileType } from '../Tiles/ColorTileType';
 import { SuperTileType } from '../Tiles/SuperTileType';
 const { ccclass, property } = _decorator;

@@ -1,21 +1,16 @@
 import { math } from "cc";
-import Utilities from "../../Plugins/Utilities";
-import { TileManager } from "../../Mediators/TileManager/TileManager";
 import { ITile } from "../../Tiles/ITile";
 import { FieldState } from "./FieldState";
+import { ReadyFieldState } from "./ReadyFieldState";
 
 export class BombFieldState extends FieldState {
-    private tileManager: TileManager = null;
-
-    public async interact(tile: ITile, tileManager: TileManager): Promise<void> {
-        this.tileManager = tileManager;
-
-        const startTilePosition = this.tileManager.getTilePosition(tile);
+    public async interact(tile: ITile): Promise<void> {
+        const startTilePosition = this.field.tileManager.getTilePosition(tile);
         let tilesToRemove: ITile[] = [];
 
         for (let y = startTilePosition.y - this.field.bombRadius; y <= startTilePosition.y + this.field.bombRadius; y++) {
             for (let x = startTilePosition.x - this.field.bombRadius; x <= startTilePosition.x + this.field.bombRadius; x++) {
-                const nextTile = this.tileManager.getTileByPosition(math.v2(x, y));
+                const nextTile = this.field.tileManager.getTileByPosition(math.v2(x, y));
 
                 if (nextTile) {
                     tilesToRemove.push(nextTile);
@@ -24,5 +19,7 @@ export class BombFieldState extends FieldState {
         }
 
         await this.field.removeTiles(tilesToRemove);
+
+        this.field.changeState(new ReadyFieldState(this.field));
     }
 }

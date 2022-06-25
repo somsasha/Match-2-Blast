@@ -1,5 +1,5 @@
 import { CCBoolean, CCFloat, Component, Node, _decorator } from 'cc';
-import Events from '../../Enums/Events';
+import Events from '../Enums/Events';
 import { GlobalEvent } from '../GlobalEvent';
 import Settings from '../Settings';
 import TransformController from './Accessories/TransformController';

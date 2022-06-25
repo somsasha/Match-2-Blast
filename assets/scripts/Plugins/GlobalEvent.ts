@@ -1,5 +1,5 @@
 import { EventTarget } from 'cc';
-import Events from '../Enums/Events';
+import Events from './Enums/Events';
 
 export class GlobalEvent extends EventTarget {
     private static instance: GlobalEvent = null;

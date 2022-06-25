@@ -1,13 +1,11 @@
 import { Component, View, _decorator } from "cc";
 
-import Events from './Enums/Events';
+import Events from './Plugins/Enums/Events';
 import Settings from "./Plugins/Settings";
 import InputManager from './Plugins/Input/InputManager';
 import { GlobalEvent } from "./Plugins/GlobalEvent";
 
-
 const { ccclass, property } = _decorator;
-
 
 @ccclass
 export default class GameManager extends Component {

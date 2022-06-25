@@ -1,5 +1,5 @@
 import { Vec2 } from "cc";
-import Easings from "../Enums/Easings";
+import Easings from "../Plugins/Enums/Easings";
 import { ISender } from "../Mediators/ISender";
 
 export interface ITile extends ISender {
