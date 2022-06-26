@@ -16,7 +16,7 @@
         "id": "1656186992817",
         "progress": 1,
         "state": "success",
-        "message": "26.06.2022 00:36 Build success in 22012 ms!",
+        "message": "26.06.2022 12:40 Build success in 20086 ms!",
         "options": {
           "name": "TapclapBlast",
           "platform": "web-mobile",
@@ -56,7 +56,7 @@
             "cocos-service": {}
           }
         },
-        "time": "26.06.2022 00:35",
+        "time": "26.06.2022 12:40",
         "dirty": false
       }
     }

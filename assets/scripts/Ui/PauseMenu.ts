@@ -28,11 +28,11 @@ export class PauseMenu extends Component {
     }
 
     private hide(): void {
-        for (let i = 0; i < this.inputs.length; i++) {
-            this.inputs[i].active = false;
-        }
-
-        new Tween<UIOpacity>(this.node.getComponent(UIOpacity)).to(0.25, { opacity: 0 }).start();
+        new Tween<UIOpacity>(this.node.getComponent(UIOpacity)).to(0.25, { opacity: 0 }).call(() => {
+            for (let i = 0; i < this.inputs.length; i++) {
+                this.inputs[i].active = false;
+            }
+        }).start();
     }
     
     private onResult(): void {
